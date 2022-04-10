@@ -1,0 +1,19 @@
+CREATE TABLE clothing (id INTEGER PRIMARY KEY, name TEXT, price NUMERIC, color TEXT, stock INTEGER, quantity_sold INTEGER);
+
+INSERT INTO clothing VALUES (1, "blouse", 22.50, "purple", 20, 50);
+INSERT INTO clothing VALUES (2, "jeans", 35.00, "blue", 15, 30);
+INSERT INTO clothing VALUES (3, "shorts", 18.50, "black", 13, 10);
+INSERT INTO clothing VALUES (4, "button_up_shirt", 27.50, "white", 15,7);
+INSERT INTO clothing VALUES (5, "maxi_skirt", 19.25, "black", 6, 14);
+INSERT INTO clothing VALUES (6, "puffer_vest", 14.50, "blue", 17, 3);
+INSERT INTO clothing VALUES (7, "running_jacket", 28.00, "maroon", 7, 13);
+INSERT INTO clothing VALUES (8, "romper", 16.00, "lilac", 12, 18);
+INSERT INTO clothing VALUES (9, "jean_jacket", 25.00, "blue", 10, 10);
+INSERT INTO clothing VALUES (10, "tank_top", 7.50, "white", 12, 8);
+INSERT INTO clothing VALUES (11, "pullover", 18.00, "grey", 16, 4);
+INSERT INTO clothing VALUES (12, "running_shorts", 19.00, "yellow", 20, 8);
+INSERT INTO clothing VALUES (13, "tshirt", 5.00, "white", 18, 2);
+INSERT INTO clothing VALUES (14, "windbreaker", 38.00, "orange", 16, 4);
+INSERT INTO clothing VALUES (15, "dress", 42.00, "silver", 10, 5);
+
+SELECT * FROM clothing WHERE price >=0 ORDER BY price asc;
